@@ -42,7 +42,7 @@ export default defineComponent({
       return this.user.local_groups
     },
     local_avatar() {
-      return `_nuxt/assets/imgs/avatars/${this.user.local_avatar}`
+      return `@/assets/imgs/${this.user.local_avatar}`
     },
   },
 });

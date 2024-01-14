@@ -47,8 +47,8 @@ export default defineComponent({
     avatar: 'filippo.jpg'
   },
   {
-    name: "Eva Johannsen",
-    role: "Fron End Developer", // [not provided]
+    name: "Eva Anette Johansen",
+    role: "Front End Developer", // [not provided]
     groups: {"Front End": "fuchsia"},
     avatar: 'eva.jpg'
   },

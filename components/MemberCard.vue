@@ -4,12 +4,12 @@
     <img class="ml-8" :src="local_avatar" alt="Avatar" />
     <h3 class='text-white' style="font-size: 1.8em;">{{ local_name }}</h3>
     <!-- <p class='text-white' style="font-size: 1.1em;">{{ local_role }}</p> -->
-    <!-- <UBadge class="mb-2" v-if="local_name.startsWith('Filippo')" color="green" size="md" style="font-size: 1em;" variant="solid">Best Employee</UBadge>
-    <UBadge class="mb-2" v-if="local_name.startsWith('Matteo')" color="green" size="md" style="font-size: 1em;" variant="solid">Best Employee</UBadge>
-    <UBadge class="mb-2" v-if="local_name.startsWith('Simone')" color="green" size="md" style="font-size: 1em;" variant="solid">Best Employee</UBadge> -->
-    <UBadge v-if="local_role!='Project Manager' && !local_role.startsWith('Head')" color="blue" size="md" style="font-size: 1em;" variant="soft">{{ local_role }}</UBadge>
-    <UBadge class="mb-4" v-if="local_role=='Project Manager'" color="teal" size="md" style="font-size: 1em;" variant="soft">{{ local_role }}</UBadge>
-    <UBadge v-if="local_role.startsWith('Head')" color="amber" size="md" style="font-size: 1em;" variant="soft">{{ local_role }}</UBadge>
+    <!-- <UBadge class="mb-2" v-if="local_name.startsWith('Filippo')" color="green" size="md" style="font-size: 1em;" variant="solid">Best Employee</UBadge> -->
+    <!-- <UBadge class="mb-2" v-if="local_name.startsWith('Matteo')" color="green" size="md" style="font-size: 1em;" variant="solid">Best Employee</UBadge> -->
+    <!-- <UBadge class="mb-2" v-if="local_name.startsWith('Simone')" color="green" size="md" style="font-size: 1em;" variant="solid">Best Employee</UBadge> -->
+    <UBadge v-if="local_role!='Project Manager' && !local_role.startsWith('Head') && !local_role.endsWith('Emotional Support')" color="blue" size="md" style="font-size: 1em;" variant="outline">{{ local_role }}</UBadge>
+    <UBadge class="mb-4" v-if="local_role=='Project Manager' || local_role.startsWith('Head')" color="teal" size="md" style="font-size: 1em;" variant="outline">{{ local_role }}</UBadge>
+    <UBadge class="mb-4" v-if="local_role.endsWith('Emotional Support')" color="red" size="md" style="font-size: 1em;" variant="outline">{{ local_role }}</UBadge>
     <br>
     <UBadge
       v-if="local_groups"

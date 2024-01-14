@@ -47,6 +47,18 @@ export default defineComponent({
     avatar: 'filippo.jpg'
   },
   {
+    name: "Eva Johannsen",
+    role: "Fron End Developer", // [not provided]
+    groups: {"Front End": "fuchsia"},
+    avatar: 'eva.jpg'
+  },
+  {
+    name: "Rubber Duck 1",
+    role: "Emotional Support", // [not provided]
+    groups: {},
+    avatar: 'rubber1.png'
+  },
+  {
     name: "Matteo Tolloso",
     role: "Head of Back End",
     groups: {"Back End": 'yellow'},
@@ -63,6 +75,12 @@ export default defineComponent({
     role: "Back End Engineer", // [not provided]
     groups: {"Back End": "yellow"},
     avatar: 'irene.jpg'
+  },
+  {
+    name: "Rubber Duck 2",
+    role: "Emotional Support", // [not provided]
+    groups: {},
+    avatar: 'rubber2.jpeg'
   },
   {
     name: "Francesca Poli",
@@ -83,6 +101,12 @@ export default defineComponent({
     avatar: 'giulia.jpeg'
   },
   {
+    name: "Rubber Duck 3",
+    role: "Emotional Support", // [not provided]
+    groups: {},
+    avatar: 'rubber3.jpeg'
+  },
+  {
     name: "Simone Ianniciello",
     role: "Head of AI",
     groups: {"AI": "red", "Front End": 'fuchsia'},
@@ -100,12 +124,13 @@ export default defineComponent({
     groups: {"AI": "red"},
     avatar: 'andrea.jpeg'
   },
-    {
-    name: "Eva Johannsen",
-    role: "Fron End Developer", // [not provided]
-    groups: {"Front End": "fuchsia"},
-    avatar: 'eva.jpg'
+  {
+    name: "Rubber Duck Army",
+    role: "Extreme Emotional Support", // [not provided]
+    groups: {},
+    avatar: 'rubberall.jpeg'
   },
+    
         // Add other members similarly
       ],
     };

@@ -1,13 +1,10 @@
 <!-- GroupMembers.vue -->
-
 <template>
   <section
     id="contact"
-    data-aos="zoom-in-up"
-    class="container mx-auto text-center py-12 mb-10"
-  ><div class="container mx-auto m-8">
+    class="container gradient-blue mx-auto text-center py-12 mb-10"
+  ><div class="container m-8">
         <h2
-          data-aos="fade-up"
           class="w-full my-2 text-8xl font-bold leading-tight text-center text-gray-800"
         >
         About Us

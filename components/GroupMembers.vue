@@ -104,7 +104,7 @@ export default defineComponent({
     name: "Eva Johannsen",
     role: "Fron End Developer", // [not provided]
     groups: {"Front End": "fuchsia"},
-    avatar: 'avatar.jpeg' // [not provided]
+    avatar: 'eva.jpg'
   },
         // Add other members similarly
       ],

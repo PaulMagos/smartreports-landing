@@ -44,7 +44,7 @@ export default defineComponent({
     name: "Filippo Biondi",
     role: "Front End Developer", // [not provided]
     groups: {"Front End": 'fuchsia'},
-    avatar: 'avatar.jpeg' // [not provided]
+    avatar: 'filippo.jpg'
   },
   {
     name: "Matteo Tolloso",
@@ -56,13 +56,13 @@ export default defineComponent({
     name: "Claudia Gentili",
     role: "Back End Engineer", // [not provided]
     groups: {"Back End": 'yellow'},
-    avatar: 'avatar.jpeg' // [not provided]
+    avatar: 'claudia.jpg'
   },
   {
     name: "Irene Testa",
     role: "Back End Engineer", // [not provided]
     groups: {"Back End": "yellow"},
-    avatar: 'avatar.jpeg' // [not provided]
+    avatar: 'irene.jpg'
   },
   {
     name: "Francesca Poli",

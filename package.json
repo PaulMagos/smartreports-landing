@@ -1,31 +1,24 @@
 {
-  "name": "project-1",
-  "version": "1.0.0",
+  "name": "nuxt-app",
   "private": true,
+  "type": "module",
   "scripts": {
-    "dev": "nuxt",
     "build": "nuxt build",
-    "start": "nuxt start",
-    "generate": "nuxt generate"
-  },
-  "dependencies": {
-    "aos": "^2.3.4",
-    "core-js": "^3.25.3",
-    "nuxt": "^2.15.8",
-    "vue": "^2.7.14",
-    "vue-chartjs": "^5.3.0",
-    "vue-property-decorator": "^9.1.2",
-    "vue-server-renderer": "^2.7.10",
-    "vue-template-compiler": "^2.7.10"
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
   },
   "devDependencies": {
-    "@nuxt/types": "^2.15.8",
-    "@nuxt/typescript-build": "^2.1.0",
-    "@nuxtjs/tailwindcss": "^6.8.0",
-    "@types/aos": "^3.0.4",
-    "@types/node": "^20.3.3",
-    "autoprefixer": "^10.4.14",
-    "postcss": "^8.4.24",
-    "tailwindcss": "^3.3.2"
+    "@nuxtjs/tailwindcss": "^6.10.4",
+    "nuxt": "^3.9.1",
+    "nuxt-aos": "^1.2.2",
+    "vue": "^3.4.13",
+    "vue-router": "^4.2.5"
+  },
+  "dependencies": {
+    "cssnano-preset-default": "^6.0.3",
+    "postcss": "^8.4.33",
+    "postcss-minify-gradients": "^6.0.1"
   }
 }

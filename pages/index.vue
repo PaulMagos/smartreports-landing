@@ -1,3 +1,55 @@
+<script setup lang="ts">
+const route = useRoute() as any;
+</script>
+<style>
+.gradient-blue{
+  background: linear-gradient(45deg, rgb(200, 232, 255), rgb(26, 103, 190), rgb(26, 103, 190));
+}
+.gradient-blue-button{
+  background: linear-gradient(45deg, rgb(26, 103, 190), rgb(26, 103, 190), rgb(26, 103, 190));
+}
+
+.horizontal-mirror{
+  transform: scale(-1, 1);
+}
+
+.group-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+.member-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 200px;
+}
+
+.member-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.member-details {
+    padding: 10px;
+}
+
+.member-name {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.member-role {
+    font-size: 14px;
+    color: #666;
+}
+</style>
+
 <template>
   <div class="leading-normal tracking-normal text-white gradient-blue">
     <LayoutNav />
@@ -65,7 +117,7 @@
         </div>
       </div>
     </div>
-    <div class="relative -mt-12 lg:-mt-24">
+    <div class="relative mt-12 lg:-mt-24">
       <svg
         viewBox="0 0 1428 174"
         version="1.1"
@@ -106,7 +158,7 @@
     </div>
     <div class="bg-white py-20"></div>
     <section id="history" class="bg-white py-8">
-      <div class="container mx-auto m-8">
+      <div class="container w-5/6  mx-auto m-8">
         <h2
           data-aos="fade-up"
           class="w-full my-2 text-8xl font-bold leading-tight text-center text-gray-800"
@@ -158,7 +210,7 @@
       <div class="bg-white py-20"></div>
     </section>
     <section id="improve" class="bg-white  py-8">
-      <div class="container mx-auto m-8">
+      <div class="container  w-5/6 mx-auto m-8">
         <h2
           data-aos="fade-up"
           class="w-full my-2 text-8xl font-bold leading-tight text-center text-gray-800"
@@ -284,7 +336,7 @@
       </div>
     </section>
     <section id="feedback" class="bg-white py-8">
-      <div class="container mx-auto m-8">
+      <div class="container w-5/6  mx-auto m-8">
         <h2
           data-aos="fade-up"
           class="my-2 text-6xl font-bold leading-tight text-center text-gray-800"
@@ -319,7 +371,7 @@
       </div>
     </section>
     <section id="subfeedback" class="bg-white py-8">
-      <div class="container mx-auto m-8">
+      <div class="container w-5/6  mx-auto m-8">
         <div
           data-aos="fade-up-left"
           class="flex flex-wrap flex-col-reverse sm:flex-row"
@@ -336,7 +388,7 @@
       </div>
     </section>
     <section id="customers" class="bg-white py-10">
-      <div class="container mx-auto flex flex-wrap pb-12 pt-8">
+      <div class="container mx-auto w-5/6  flex flex-wrap pb-12 pt-8">
         <h2
 
           data-aos="fade-up"
@@ -389,8 +441,8 @@
       </div>
     </div>
     </section>
-    <section id="access" class="bg-white py-10">
-      <div class="container mx-auto px-2 pt-4 pb-12 text-gray-800">
+    <section id="access" class="bg-white  py-10">
+      <div class="container mx-auto w-5/6  px-2 pt-4 pb-12 text-gray-800">
         <h2
           data-aos="fade-up"
           class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800"
@@ -509,65 +561,12 @@
         </div>
       </div>
     </section>
-
+    <section
+    id="contact"
+    class="bg-white py-8"
+    >
     <GroupMembers />
+    </section>
     <LayoutFooter />
   </div>
 </template>
-
-<script lang="ts">
-import Vue from "vue";
-
-export default Vue.extend({
-  name: "IndexPage",
-});
-</script>
-
-<style>
-.gradient-blue{
-  background: linear-gradient(45deg, rgb(200, 232, 255), rgb(26, 103, 190), rgb(26, 103, 190));
-}
-.gradient-blue-button{
-  background: linear-gradient(45deg, rgb(26, 103, 190), rgb(26, 103, 190), rgb(26, 103, 190));
-}
-
-.horizontal-mirror{
-  transform: scale(-1, 1);
-}
-
-.group-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-            margin-top: 20px;
-        }
-
-.member-card {
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    overflow: hidden;
-    width: 200px;
-}
-
-.member-image {
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
-}
-
-.member-details {
-    padding: 10px;
-}
-
-.member-name {
-    font-size: 16px;
-    font-weight: bold;
-    margin-bottom: 5px;
-}
-
-.member-role {
-    font-size: 14px;
-    color: #666;
-}
-</style>

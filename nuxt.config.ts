@@ -1,7 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  modules: ["nuxt-aos", "@nuxtjs/tailwindcss"],
+  modules: ['@nuxt/ui', "nuxt-aos", "@nuxtjs/tailwindcss"],
   app: {
     head: {
       title: 'Landing page',

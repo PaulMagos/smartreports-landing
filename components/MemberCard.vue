@@ -2,11 +2,26 @@
 <template>
   <div class="member-card gradient align-center justify-center">
     <img class="ml-8" :src="local_avatar" alt="Avatar" />
-    <div class="info">
-      <h3 class='text-white' style="font-size: 1.8em;">{{ local_name }}</h3>
-      <p class='text-white' style="font-size: 1.1em;">{{ local_role }}</p>
-      <!-- <p class='text-white'>Groups: {{ local_groups.join(", ") }}</p> -->
-    </div>
+    <h3 class='text-white' style="font-size: 1.8em;">{{ local_name }}</h3>
+    <!-- <p class='text-white' style="font-size: 1.1em;">{{ local_role }}</p> -->
+    <!-- <UBadge class="mb-2" v-if="local_name.startsWith('Filippo')" color="green" size="md" style="font-size: 1em;" variant="solid">Best Employee</UBadge>
+    <UBadge class="mb-2" v-if="local_name.startsWith('Matteo')" color="green" size="md" style="font-size: 1em;" variant="solid">Best Employee</UBadge>
+    <UBadge class="mb-2" v-if="local_name.startsWith('Simone')" color="green" size="md" style="font-size: 1em;" variant="solid">Best Employee</UBadge> -->
+    <UBadge v-if="local_role!='Project Manager' && !local_role.startsWith('Head')" color="blue" size="md" style="font-size: 1em;" variant="soft">{{ local_role }}</UBadge>
+    <UBadge class="mb-4" v-if="local_role=='Project Manager'" color="teal" size="md" style="font-size: 1em;" variant="soft">{{ local_role }}</UBadge>
+    <UBadge v-if="local_role.startsWith('Head')" color="amber" size="md" style="font-size: 1em;" variant="soft">{{ local_role }}</UBadge>
+    <br>
+    <UBadge
+      v-if="local_groups"
+      class="mt-2"
+      :label="group"
+      v-for="i, group in user.local_groups"
+      :key="i"
+      variant="subtle"
+      :color="i"
+      style="bottom: -2%; position: relative;"
+      size="md" :ui="{ rounded: 'rounded-full' }"
+      ></UBadge>
   </div>
 </template>
 
@@ -28,7 +43,7 @@ export default defineComponent({
   props: {
     name: String,
     role: String | null,
-    groups: Array | null,
+    groups: {} | null,
     avatar: String,
   },
   computed: {
@@ -39,12 +54,12 @@ export default defineComponent({
       return this.user.local_role
     },
     local_groups() {
-      return this.user.local_groups
+      return this.user.local_groups 
     },
     local_avatar() {
       return `./${this.user.local_avatar}`
     },
-  },
+  }
 });
 </script>
 
